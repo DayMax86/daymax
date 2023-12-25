@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import crochetPixelConverter from './pages';
+import crochetPixelConverter from './pages/crochet';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

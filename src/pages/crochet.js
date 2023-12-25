@@ -1,4 +1,4 @@
-import './index.css';
+import './crochet.css';
 import '../assets/electriccafe.png';
 
 const crochetPixelConverter = (
@@ -7,10 +7,9 @@ const crochetPixelConverter = (
 			<title>Crochet Pixel Image Converter</title>
 		</head>
 		<body>
-
-			<canvas id="canvas" width="80" height="80"></canvas>
+			<sourceImage/>
+			<cnvs/>
 			<p align="center" class="color-cell" id="hovered-color"></p>
-			<img id="sourceImage" src={'../assets/electriccafe.png'} />
 
 			<div class="slidecontainer">
 				<input type="range" min="1" max="60" value="10" class="slider" id="sensitivitySlider" onchange="refreshTable()" />
@@ -25,20 +24,27 @@ const crochetPixelConverter = (
 
 );
 
+const cnvs = (
+	< >
+		<canvas id="cnvs" width="80" height="80"></canvas>
+	</>
+);
+
+const sourceImage = (
+	< >
+		<img src={'../assets/elecrticcafe.png'} crossOrigin='Anonymous'/>
+	</>
+);
+
+const imgRef = React.useRef<HTMLImageElement>(null);
+
 var img = new Image();
 img.crossOrigin = 'Anonymous';
 img = document.getElementById('sourceImage');
-//img.src = '../assets/electriccafe.png';
+img.src = '../assets/electriccafe.png';
 var canvas = document.getElementById('canvas');
 
 var ctx = () => {canvas.getContext('2d')};
-
-
-img.onload = () => {
-	ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-	img.style.display = 'none';
-	refreshSensitivityValue();
-};
 
 function refreshSensitivityValue() {
 	document.getElementById('sensitivityValue').innerHTML = document.getElementById("sensitivitySlider").value;
