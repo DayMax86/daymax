@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -10,8 +10,9 @@ import Typography from '@mui/material/Typography';
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from '@mui/material/IconButton';
-import sanLogo from './assets/Projects/san_logo.png';
-import linguaSyneLogo from './assets/Projects/linguasyne_logo.png';
+
+import './index.css';
+import { myProjects } from './projects';
 
 export const Header = () => {
   return (
@@ -31,7 +32,6 @@ export default function HomeCard(props) {
   const linksList = props.links.map((link) =>
     <Button size="small">{link}</Button>
   );
-
 
   return (
     <div style={{ 
@@ -61,39 +61,6 @@ export default function HomeCard(props) {
     </div>
   );
 }
-
-const myProjects = [
-
-  {
-  title: 'Shake a Number',
-  description: 'Android dice app game',
-  thumbnail: sanLogo,
-  links: [
-    <a href="https://google.com" target="_blank" rel="noreferrer">
-      Google
-    </a>,
-    <a href="https://github.com/DayMax86/ShakeANumber" target="_blank" rel="noreferrer">
-      View on GitHub
-    </a>,
-  ]
-
-  },
-
-  {
-  title: 'LinguaSyne',
-  description: 'Android language-learning app... blah blah blah blah blah blah',
-  thumbnail: linguaSyneLogo,
-  links: [
-    <a href="https://google.com" target="_blank" rel="noreferrer">
-      Google
-    </a>,
-    <a href="https://github.com/DayMax86/LinguaSyne" target="_blank" rel="noreferrer">
-      View on GitHub
-    </a>,
-  ]
-  },
-
-];
 
 export const HomeContainer = () => {
 
