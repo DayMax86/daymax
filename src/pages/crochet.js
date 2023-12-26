@@ -36,7 +36,7 @@ const sourceImage = (
 	</>
 );
 
-const imgRef = React.useRef<HTMLImageElement>(null);
+
 
 var img = new Image();
 img.crossOrigin = 'Anonymous';
