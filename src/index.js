@@ -13,7 +13,26 @@ import IconButton from '@mui/material/IconButton';
 import sanLogo from './assets/Projects/san_logo.png';
 import linguaSyneLogo from './assets/Projects/linguasyne_logo.png';
 
+export const Header = () => {
+  return (
+    <AppBar position="static">
+      <Toolbar sx={{justifyContent:'center'}}>
+        <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }} />
+        <Typography gutterBottom variant="h5" component="div">
+          Max Day
+        </Typography>
+      </Toolbar>
+    </AppBar>
+  );
+}
+
 export default function HomeCard(props) {
+
+  const linksList = props.links.map((link) =>
+    <Button size="small">{link}</Button>
+  );
+
+
   return (
     <div style={{ 
       margin: '10px',
@@ -36,71 +55,66 @@ export default function HomeCard(props) {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small">View</Button>
-          <Button size="small">View code</Button>
+          {linksList}
         </CardActions>
       </Card>
     </div>
   );
 }
 
-export const Header = () => {
-  return (
-    <AppBar position="static">
-      <Toolbar sx={{justifyContent:'center'}}>
-        <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }} />
-        <Typography gutterBottom variant="h5" component="div">
-          Max Day
-        </Typography>
-      </Toolbar>
-    </AppBar>
-  );
-}
+const myProjects = [
+
+  {
+  title: 'Shake a Number',
+  description: 'Android dice app game',
+  thumbnail: sanLogo,
+  links: [
+    <a href="https://google.com" target="_blank" rel="noreferrer">
+      Google
+    </a>,
+    <a href="https://github.com/DayMax86/ShakeANumber" target="_blank" rel="noreferrer">
+      View on GitHub
+    </a>,
+  ]
+
+  },
+
+  {
+  title: 'LinguaSyne',
+  description: 'Android language-learning app... blah blah blah blah blah blah',
+  thumbnail: linguaSyneLogo,
+  links: [
+    <a href="https://google.com" target="_blank" rel="noreferrer">
+      Google
+    </a>,
+    <a href="https://github.com/DayMax86/LinguaSyne" target="_blank" rel="noreferrer">
+      View on GitHub
+    </a>,
+  ]
+  },
+
+];
 
 export const HomeContainer = () => {
+
+const homeCards = myProjects.map( (project) => 
+  <HomeCard
+    title={project.title}
+    description={project.description}
+    thumbnail={project.thumbnail}
+    links={project.links}
+  />
+);
+
   return (
     < >
       <div style={{
         display: "flex",
-        justifyContent: "center",
+        justifyContent: "space-evenly",
         flexDirection: "row",
         flexWrap: 'wrap',
       }}>
-        <HomeCard 
-          title="Shake a Number"
-          description="Android app dice game"
-          thumbnail={sanLogo}
-        />
-        <HomeCard
-          title="LinguaSyne" 
-          description="Language-learning Android app... blah blah blah blah blah etc." 
-          thumbnail={linguaSyneLogo}
-        />
-        <HomeCard
-          title="LinguaSyne" 
-          description="Language-learning Android app... blah blah blah blah blah etc." 
-          thumbnail={linguaSyneLogo}
-        />
-        <HomeCard
-          title="LinguaSyne" 
-          description="Language-learning Android app... blah blah blah blah blah etc." 
-          thumbnail={linguaSyneLogo}
-        />
-        <HomeCard
-          title="LinguaSyne" 
-          description="Language-learning Android app... blah blah blah blah blah etc." 
-          thumbnail={linguaSyneLogo}
-        />
-        <HomeCard
-          title="LinguaSyne" 
-          description="Language-learning Android app... blah blah blah blah blah etc." 
-          thumbnail={linguaSyneLogo}
-        />
-        <HomeCard
-          title="LinguaSyne" 
-          description="Language-learning Android app... blah blah blah blah blah etc." 
-          thumbnail={linguaSyneLogo}
-        />
+        {homeCards}
       </div>
     </>
   );
