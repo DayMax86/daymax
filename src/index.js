@@ -54,9 +54,16 @@ export default function HomeCard(props) {
             {props.description}
           </Typography>
         </CardContent>
-        <CardActions>
-          {linksList}
-        </CardActions>
+          <div style={{
+            display: "flex",
+            justifyContent: "space-around",
+            flexDirection: "row",
+            flexWrap: 'wrap',
+        }}>
+          <CardActions>
+            {linksList}
+          </CardActions>
+        </div>
       </Card>
     </div>
   );
@@ -85,7 +92,7 @@ const homeCards = myProjects.map( (project) =>
       </div>
     </>
   );
-}
+} 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
