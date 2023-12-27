@@ -10,15 +10,18 @@ import Typography from '@mui/material/Typography';
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from '@mui/material/IconButton';
+import Paper from '@mui/material/Paper';
+import { Avatar } from '@mui/material';
 
 import './index.css';
 import { myProjects } from './projects';
+import max from './assets/Projects/max.jpg';
 
 export const Header = () => {
   return (
     <AppBar position="static">
       <Toolbar sx={{justifyContent:'center'}}>
-        <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }} />
+        <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 0 }} />
         <Typography gutterBottom variant="h5" component="div">
           Max Day
         </Typography>
@@ -26,6 +29,29 @@ export const Header = () => {
     </AppBar>
   );
 }
+
+const AboutBox = () => {
+  return (
+    <Paper elevation={5} sx={{ m: 1 }}>
+      <div style={{
+        display: 'flex',
+        justifyContent: "flex-start",
+        flexDirection: "row",
+        flexWrap: 'nowrap',
+        alignItems: 'center',
+    }}>
+      <Avatar alt="Max" src={max} sx={{ m: 2 , width: 200, height: 200, borderColor: 'blue', borderStyle: 'solid', borderWidth: '4px'}}/>
+        <Typography variant="h5" sx={{ m: 1, mx: 2, justifyContent: 'center'}}>
+          About me: <br/><br/>
+          I am a Computer Science student at the University of Bath, looking for graduate roles in 
+          software engineering and development. Below are examples of various projects of mine for which the
+          code is open-source and viewable on GitHub.
+        </Typography>
+    </div>
+    </Paper>
+  );
+}
+
 
 export default function HomeCard(props) {
 
@@ -98,6 +124,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   < >
     <Header />
+    <AboutBox />
     <HomeContainer />
   </>
 );
