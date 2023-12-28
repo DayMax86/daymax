@@ -12,7 +12,8 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from '@mui/material/IconButton';
 import Paper from '@mui/material/Paper';
 import { Avatar } from '@mui/material';
-import MenuIcon from "@material-ui/icons/Menu";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { ImProfile } from "react-icons/im";
 
 import './index.css';
 import { myProjects } from './projects';
@@ -21,13 +22,25 @@ import max from './assets/Projects/max.jpg';
 export const Header = () => {
   return (
     <AppBar position="static">
-      <Toolbar sx={{justifyContent:'center'}}>
-        <IconButton>
-          <MenuIcon/>
-        </IconButton>
+      <Toolbar sx={{ justifyContent: 'center' }}>
         <Typography gutterBottom variant="h5" component="div">
           Max Day
         </Typography>
+        <IconButton>
+          <a href="https://github.com/DayMax86" target="_blank" rel="noreferrer">
+            <FaGithub />
+          </a>
+        </IconButton>
+        <IconButton>
+          <a href="https://uk.linkedin.com/in/daymax96" target="_blank" rel="noreferrer">
+            <FaLinkedin />
+          </a>
+        </IconButton>
+        <IconButton>
+          <a href="https://docs.google.com/document/d/1ngOzLQnJZ3TL-yOp7n4mRF6fi_hCgXhBYumxiNyK16E/edit?usp=drive_link" target="_blank" rel="noreferrer">
+            <ImProfile />
+          </a>
+        </IconButton>
       </Toolbar>
     </AppBar>
   );
