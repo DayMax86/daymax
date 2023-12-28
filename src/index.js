@@ -12,6 +12,7 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from '@mui/material/IconButton';
 import Paper from '@mui/material/Paper';
 import { Avatar } from '@mui/material';
+import MenuIcon from "@material-ui/icons/Menu";
 
 import './index.css';
 import { myProjects } from './projects';
@@ -21,7 +22,9 @@ export const Header = () => {
   return (
     <AppBar position="static">
       <Toolbar sx={{justifyContent:'center'}}>
-        <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 0 }} />
+        <IconButton>
+          <MenuIcon/>
+        </IconButton>
         <Typography gutterBottom variant="h5" component="div">
           Max Day
         </Typography>
