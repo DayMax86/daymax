@@ -14,6 +14,7 @@ import Paper from '@mui/material/Paper';
 import { Avatar } from '@mui/material';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { ImProfile } from "react-icons/im";
+import { useWindowSize } from "@uidotdev/usehooks";
 
 import './index.css';
 import { myProjects } from './projects';
@@ -21,9 +22,9 @@ import max from './assets/Projects/max.jpg';
 
 export const Header = () => {
   return (
-    <AppBar position="static">
-      <Toolbar sx={{ justifyContent: 'center' }}>
-        <Typography gutterBottom variant="h5" component="div">
+    <AppBar position="sticky">
+      <Toolbar sx={{ justifyContent: 'center', backgroundColor: 'powderblue'}}>
+        <Typography gutterBottom variant="h5" component="div" color="black" sx={{ mr: 2 }}>
           Max Day
         </Typography>
         <IconButton>
@@ -47,6 +48,7 @@ export const Header = () => {
 }
 
 const AboutBox = () => {
+  const size = useWindowSize();
   return (
     <Paper elevation={5} sx={{ m: 1 }}>
       <div style={{
@@ -56,14 +58,14 @@ const AboutBox = () => {
         flexWrap: 'nowrap',
         alignItems: 'center',
     }}>
-      <Avatar alt="Max" src={max} sx={{ m: 2 , width: 200, height: 200, borderColor: 'blue', borderStyle: 'solid', borderWidth: '4px'}}/>
-        <Typography variant="h5" sx={{ m: 1, mx: 2, justifyContent: 'center'}}>
-          About me: <br/><br/>
-          I am a Computer Science student at the University of Bath, looking for graduate roles in 
-          software engineering and development. Below are examples of various projects of mine for which the
-          code is open-source and viewable on GitHub.
-        </Typography>
-    </div>
+      <Avatar alt="Max" src={max} sx={{ m: 2 , width: size.width/4, height: size.width/4, borderColor: 'powderblue', borderStyle: 'solid', borderWidth: '4px'}}/>
+      <Typography variant="h5" sx={{ m: 1, mx: 2, justifyContent: 'center'}}>
+        About me: <br/><br/>
+        I'm a Computer Science student at the University of Bath, looking for graduate roles in 
+        software engineering and development. Below are examples of various projects of mine for which the
+        code is open-source and viewable on GitHub.
+      </Typography>
+      </div>
     </Paper>
   );
 }
@@ -81,7 +83,7 @@ export default function HomeCard(props) {
       flexGrow: 1,
       flexWrap: 'wrap',
     }}>
-      <Card sx={{
+      <Card elevation={5} sx={{
         minWidth: 300 }}>
         <CardMedia
           sx={{ height: 200 }}
