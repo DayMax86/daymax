@@ -38,7 +38,7 @@ export const Header = () => {
           </a>
         </IconButton>
         <IconButton>
-          <a href="https://docs.google.com/document/d/1ngOzLQnJZ3TL-yOp7n4mRF6fi_hCgXhBYumxiNyK16E/edit?usp=drive_link" target="_blank" rel="noreferrer">
+          <a href="https://docs.google.com/document/d/1ngOzLQnJZ3TL-yOp7n4mRF6fi_hCgXhBYumxiNyK16E/edit?usp=sharing" target="_blank" rel="noreferrer">
             <ImProfile />
           </a>
         </IconButton>
@@ -58,8 +58,8 @@ const AboutBox = () => {
         flexWrap: 'nowrap',
         alignItems: 'center',
     }}>
-      <Avatar alt="Max" src={max} sx={{ m: 2 , width: size.width/4, height: size.width/4, borderColor: 'powderblue', borderStyle: 'solid', borderWidth: '4px'}}/>
-      <Typography variant="h5" sx={{ m: 1, mx: 2, justifyContent: 'center'}}>
+      <Avatar alt="Max" src={max} sx={{ m: 2 , width: size.width/6, height: size.width/6, borderColor: 'powderblue', borderStyle: 'solid', borderWidth: '4px'}}/>
+      <Typography variant="body1" sx={{ m: 1, mx: 2, justifyContent: 'center'}}>
         About me: <br/><br/>
         I'm a Computer Science student at the University of Bath, looking for graduate roles in 
         software engineering and development. Below are examples of various projects of mine for which the
