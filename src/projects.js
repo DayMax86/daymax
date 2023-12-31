@@ -3,13 +3,15 @@ import linguaSyneLogo from './assets/Projects/linguasyne_logo.png';
 import max from './assets/Projects/max.jpg';
 import crochet from './assets/Projects/crochet.png';
 import java from './assets/Projects/java_bath.png';
+import reactlogo from './assets/Projects/React_Logo.png';
+import trebleclef from './assets/Projects/Treble_clef.png';
 
 export const myProjects = [
 
   {
     title: 'This website!',
     description: 'Site built using React.js with material-ui',
-    thumbnail: '',
+    thumbnail: reactlogo,
     links: [
       <a href="https://github.com/DayMax86/daymax" target="_blank" rel="noreferrer">
         GitHub
@@ -71,7 +73,7 @@ export const myProjects = [
   {
       title: 'TakeNote',
       description: 'Demo Android app testing if Jetpack Compose could be used to make a simple game',
-      thumbnail: '',
+      thumbnail: trebleclef,
       links: [
         <a href="https://github.com/DayMax86/TakeNote" target="_blank" rel="noreferrer">
             GitHub
