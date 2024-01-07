@@ -5,6 +5,8 @@ import crochet from './assets/Projects/crochet.png';
 import java from './assets/Projects/java_bath.png';
 import reactlogo from './assets/Projects/React_Logo.png';
 import trebleclef from './assets/Projects/Treble_clef.png';
+import React from 'react';
+import { redirect } from 'react-router-dom';
 
 export const myProjects = [
 
@@ -53,6 +55,9 @@ export const myProjects = [
         description: 'A JavaScript page to create crochet pattern instructions from an image\'s pixels',
         thumbnail: crochet,
         links: [
+          <a href={redirect("./crochet.html")}>
+            Site page
+          </a>,
           <a href="https://github.com/DayMax86/CrochetPixelCalculator" target="_blank" rel="noreferrer">
               GitHub
           </a>,
