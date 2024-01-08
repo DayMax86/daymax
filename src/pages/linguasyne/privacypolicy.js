@@ -1,5 +1,6 @@
-var LsPrivacyPolicy = React.createClass({
-  render: function() {
+import React from "react";
+
+var LsPrivacyPolicy = () => {
     return (
       <div>
         <meta charSet="utf-8" />
@@ -50,7 +51,6 @@ var LsPrivacyPolicy = React.createClass({
           Privacy Policy, do not hesitate to contact me at daymax96@gmail.com.
         </p></div>
     );
-  }
-});
+  };
 
 export default LsPrivacyPolicy;

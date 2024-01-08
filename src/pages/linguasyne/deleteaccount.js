@@ -1,5 +1,6 @@
-var LsDeleteAccount = React.createClass({
-  render: function() {
+import React from "react";
+
+var LsDeleteAccount = () => {
     return (
       <div>
         <meta charSet="utf-8" />
@@ -15,7 +16,6 @@ var LsDeleteAccount = React.createClass({
         </p>
       </div>
     );
-  }
-});
+  };
 
 export default LsDeleteAccount;
