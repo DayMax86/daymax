@@ -49,7 +49,19 @@ var LsPrivacyPolicy = () => {
         </p> <p>This policy is effective as of 2023-01-09</p> <p><strong>Contact Us</strong></p> <p>
           If you have any questions or suggestions about my
           Privacy Policy, do not hesitate to contact me at daymax96@gmail.com.
-        </p></div>
+        </p>
+        
+        <div>
+        <a href="mailto:daymax96@gmail.com?subject=Delete%20my%20LinguaSyne%20account&body=I%20no%20longer%20want%20to%20have%20a%20LinguaSyne%20account%2C%20and%20request%20that%20my%20account%20and%20user%20data%20be%20deleted.">
+          Click here to request account deletion.
+        </a>
+        <p>
+          All user data will be deleted: username, password, any uploaded images, all custom language data and progress.
+          Data will be deleted within one month of the request being sent.
+        </p>
+      </div>
+        
+        </div>
     );
   };
 

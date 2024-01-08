@@ -1,12 +1,11 @@
 import sanLogo from './assets/Projects/san_logo.png';
 import linguaSyneLogo from './assets/Projects/linguasyne_logo.png';
-import max from './assets/Projects/max.jpg';
 import crochet from './assets/Projects/crochet.png';
 import java from './assets/Projects/java_bath.png';
 import reactlogo from './assets/Projects/React_Logo.png';
 import trebleclef from './assets/Projects/Treble_clef.png';
 import React from 'react';
-import { redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const myProjects = [
 
@@ -32,6 +31,10 @@ export const myProjects = [
       <a href="https://github.com/DayMax86/LinguaSyne" target="_blank" rel="noreferrer">
         GitHub
       </a>,
+      <div>
+        {<Link to="/linguasyne/privacypolicy">Privacy policy</Link>}
+      </div>,
+
     ]
   },
 
@@ -55,9 +58,6 @@ export const myProjects = [
         description: 'A JavaScript page to create crochet pattern instructions from an image\'s pixels',
         thumbnail: crochet,
         links: [
-          <a href={redirect("./crochet.html")}>
-            Site page
-          </a>,
           <a href="https://github.com/DayMax86/CrochetPixelCalculator" target="_blank" rel="noreferrer">
               GitHub
           </a>,

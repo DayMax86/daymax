@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Crochet from './pages/crochet';
 import LsPrivacyPolicy from "./pages/linguasyne/privacypolicy";
-import LsDeleteAccount from "./pages/linguasyne/deleteaccount";
 
 export default function App() {
   return (
@@ -17,7 +16,6 @@ export default function App() {
       <Routes>
         <Route path="/linguasyne/">
           <Route path="privacypolicy" element={<LsPrivacyPolicy/>}/>
-          <Route path="deleteaccount" element={<LsDeleteAccount/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
