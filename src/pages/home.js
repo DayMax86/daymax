@@ -62,8 +62,10 @@ const AboutBox = () => {
       <Typography variant="body1" sx={{ m: 1, mx: 2, justifyContent: 'center'}}>
         About me: <br/><br/>
         I'm a Computer Science student at the University of Bath, looking for graduate roles in 
-        software engineering and development. Below are examples of various projects of mine for which the
-        code is open-source and viewable on GitHub.
+        software engineering and development.<br></br>
+        Below are examples of various projects of mine for which the
+        code is open-source and viewable on GitHub.<br></br>
+        At the top of the page you can find links to view my GitHub profile, my LinkedIn account, and my CV.
       </Typography>
       </div>
     </Paper>

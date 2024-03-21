@@ -25,9 +25,9 @@ export const myProjects = [
     description: 'Android language-learning app created with Kotlin, Jetpack Compose, Firebase, etc.',
     thumbnail: linguaSyneLogo,
     links: [
-      <a href="https://play.google.com/store/apps/details?id=com.daymax86.linguasyne&hl=en_GB&gl=US" target="_blank" rel="noreferrer">
-        Play store
-      </a>,
+      // <a href="https://play.google.com/store/apps/details?id=com.daymax86.linguasyne&hl=en_GB&gl=US" target="_blank" rel="noreferrer">
+      //   Play store
+      // </a>,
       <a href="https://github.com/DayMax86/LinguaSyne" target="_blank" rel="noreferrer">
         GitHub
       </a>,
@@ -43,9 +43,9 @@ export const myProjects = [
     description: 'Android dice app game written in Java',
     thumbnail: sanLogo,
     links: [
-      <a href="https://play.google.com/store/apps/details?id=com.daymax86.shakeanumber&hl=en_GB&gl=US" target="_blank" rel="noreferrer">
-        Play store
-      </a>,
+      // <a href="https://play.google.com/store/apps/details?id=com.daymax86.shakeanumber&hl=en_GB&gl=US" target="_blank" rel="noreferrer">
+      //   Play store
+      // </a>,
       <a href="https://github.com/DayMax86/ShakeANumber" target="_blank" rel="noreferrer">
         GitHub
       </a>,
