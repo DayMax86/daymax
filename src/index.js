@@ -1,12 +1,12 @@
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import Home from "./pages/home";
 import Crochet from './pages/crochet';
 import LsPrivacyPolicy from "./pages/linguasyne/privacypolicy";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/">
           <Route index element={<Home />} />
@@ -18,7 +18,7 @@ export default function App() {
           <Route path="privacypolicy" element={<LsPrivacyPolicy/>}/>
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

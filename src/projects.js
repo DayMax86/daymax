@@ -3,7 +3,7 @@ import linguaSyneLogo from './assets/Projects/linguasyne_logo.png';
 import crochet from './assets/Projects/crochet.png';
 import java from './assets/Projects/java_bath.png';
 import reactlogo from './assets/Projects/React_Logo.png';
-import trebleclef from './assets/Projects/Treble_clef.png';
+import forwardmarch from './assets/Projects/forwardmarch.png';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -39,13 +39,21 @@ export const myProjects = [
   },
 
   {
+    title: 'ForwardMarch',
+    description: 'Chess-inspired game built using LibGDX and written in Kotlin',
+    thumbnail: forwardmarch,
+    links: [
+      <a href="https://github.com/DayMax86/ForwardMarch" target="_blank" rel="noreferrer">
+          GitHub
+      </a>,
+    ]
+  },
+
+  {
     title: 'Shake a Number',
     description: 'Android dice app game written in Java',
     thumbnail: sanLogo,
     links: [
-      // <a href="https://play.google.com/store/apps/details?id=com.daymax86.shakeanumber&hl=en_GB&gl=US" target="_blank" rel="noreferrer">
-      //   Play store
-      // </a>,
       <a href="https://github.com/DayMax86/ShakeANumber" target="_blank" rel="noreferrer">
         GitHub
       </a>,
@@ -75,15 +83,6 @@ export const myProjects = [
         ]
   },
 
-  {
-      title: 'TakeNote',
-      description: 'Demo Android app testing if Jetpack Compose could be used to make a simple game',
-      thumbnail: trebleclef,
-      links: [
-        <a href="https://github.com/DayMax86/TakeNote" target="_blank" rel="noreferrer">
-            GitHub
-        </a>,
-      ]
-  },
+
 
   ];
