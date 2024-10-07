@@ -10,7 +10,7 @@ export default function App() {
       <Routes>
         <Route path="/">
           <Route index element={<Home />} />
-          <Route path="crochet" element={<Crochet />}/>
+          <Route path="/crochet" element={<Crochet />}/>
         </Route>
       </Routes>
       <Routes>
