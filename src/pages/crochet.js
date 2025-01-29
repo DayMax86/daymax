@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import data from "./data.json"
+
 
 const Crochet = () => {
   
@@ -71,7 +71,7 @@ const Crochet = () => {
 //   </div>
 // );
 
-return (<>{JSON.stringify(data)}</>)
+// return (<>{JSON.stringify(data)}</>)
 
 }
 

@@ -1,4 +1,5 @@
 import sanLogo from './assets/Projects/san_logo.png';
+import sudoku from './assets/Projects/sudoku.png';
 import linguaSyneLogo from './assets/Projects/linguasyne_logo.png';
 import crochet from './assets/Projects/crochet.png';
 import java from './assets/Projects/java_bath.png';
@@ -48,6 +49,29 @@ export const myProjects = [
       </a>,
     ]
   },
+  
+  {
+    title: 'Crochet Pixel Calculator',
+    description: 'An app used to create crochet pattern instructions from an image\'s pixels',
+    thumbnail: crochet,
+    links: [
+      <a href="https://github.com/DayMax86/CrochetPixels" target="_blank" rel="noreferrer">
+          GitHub
+      </a>,
+    ]
+  },
+
+  {
+    title: 'Sudoku solver',
+    description: 'Python AI sudoku solver using DFS with backtracking.',
+    thumbnail: sudoku,
+    links: [
+      <a href="https://github.com/DayMax86/SudokuSolver" target="_blank" rel="noreferrer">
+        GitHub
+      </a>,
+    ]
+  
+  },
 
   {
     title: 'Shake a Number',
@@ -60,27 +84,16 @@ export const myProjects = [
     ]
   
   },
-  
-  {
-        title: 'Crochet Pixel Calculator',
-        description: 'A JavaScript page to create crochet pattern instructions from an image\'s pixels',
-        thumbnail: crochet,
-        links: [
-          <a href="https://github.com/DayMax86/CrochetPixelCalculator" target="_blank" rel="noreferrer">
-              GitHub
-          </a>,
-        ]
-  },
 
   {
-        title: 'Java coursework',
-        description: 'University coursework assignment for MSc Computer Science',
-        thumbnail: java,
-        links: [
-          <a href="https://github.com/DayMax86/Coursework2" target="_blank" rel="noreferrer">
-              GitHub
-          </a>,
-        ]
+    title: 'Java coursework',
+    description: 'University coursework assignment for MSc Computer Science',
+    thumbnail: java,
+    links: [
+      <a href="https://github.com/DayMax86/Coursework2" target="_blank" rel="noreferrer">
+          GitHub
+      </a>,
+    ]
   },
 
 
