@@ -60,9 +60,8 @@ const AboutBox = () => {
       <Avatar alt="Max" src={max} sx={{ m: 2 , width: size.width/6, height: size.width/6, borderColor: 'powderblue', borderStyle: 'solid', borderWidth: '4px'}}/>
       <Typography variant="body1" sx={{ m: 1, mx: 2, justifyContent: 'center'}}>
         About me: <br/><br/>
-        I'm a Computer Science student at the University of Bath, looking for graduate roles in 
-        software engineering and development.<br></br>
-        Below are examples of various projects of mine for which the
+        I'm an Android Developer currently working for Bloom & Wild.<br></br>
+        Below are examples of various past projects of mine for which the
         code is open-source and viewable on GitHub.<br></br>
         At the top of the page you can find links to view my GitHub profile, my LinkedIn account, and my CV.
       </Typography>
