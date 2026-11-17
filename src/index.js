@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import Home from "./pages/home";
 import Crochet from './pages/crochet';
 import LsPrivacyPolicy from "./pages/linguasyne/privacypolicy";
