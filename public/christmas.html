@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advent Calendar</title>
+  <style>
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="headingDate"></h1>
+  <img id="instructionsImage" width="500">
+
+  <script>
+    const day = new Date().getDate();
+    const heading = document.getElementById("headingDate");
+    const image = document.getElementById("instructionsImage");
+
+    if (day >= 1 && day <= 24) {
+      heading.textContent = `Advent day #${day}`;
+      image.src = `assets/legoday${day}.png`;
+      image.alt = `Day ${day}`;
+    } else if (day === 25) {
+      heading.textContent = "Merry Christmas!";
+      image.src = "assets/legodefault.png";
+      image.alt = "Day 25";
+    } else {
+      heading.textContent = "Come back next year!";
+      image.src = "assets/legodefault.png";
+      image.alt = "Come back next year!";
+    }
+  </script>
+</body>
+</html>

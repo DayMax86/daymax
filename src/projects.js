@@ -5,7 +5,7 @@ import crochet from './assets/Projects/crochet.png';
 import java from './assets/Projects/java_bath.png';
 import reactlogo from './assets/Projects/React_Logo.png';
 import forwardmarch from './assets/Projects/forwardmarch.png';
-import React from 'react';
+import legoDefault from './assets/Lego/legodefault.png';
 import { Link } from 'react-router-dom';
 
 export const myProjects = [
@@ -17,6 +17,17 @@ export const myProjects = [
     links: [
       <a href="https://github.com/DayMax86/daymax" target="_blank" rel="noreferrer">
         GitHub
+      </a>,
+    ]
+  },
+
+  {
+    title: 'LEGO Advent Calendar',
+    description: 'A daily LEGO build instruction calendar for December.',
+    thumbnail: legoDefault,
+    links: [
+      <a href={`${process.env.PUBLIC_URL}/christmas.html`}>
+        View today's build
       </a>,
     ]
   },
